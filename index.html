@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키보디st | 꽁꽁 얼어붙은 한강 위를 걸어다니는 고양이 게임!</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/cat1.png" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+
+    <!-- google fonts - Do Heon, Jua, Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-box">
+        <!-- Game Tutorial -->
+        <div class="game-tutorial">
+          <img src="./img/tutorial.png" />
+        </div>
+
+        <!-- Game Start -->
+        <div class="game-start">
+          <img src="./img/start.png" width="130" />
+        </div>
+
+        <!-- Game Score -->
+        <div class="game-score">
+          <p>SCORE</p>
+          <span></span>
+        </div>
+
+        <!-- Canvas -->
+        <canvas id="canvas"></canvas>
+      </div>
+      <!-- Game Over -->
+      <div class="game-over">
+        <h2>고양이가 한강에 빠졌다!</h2>
+        <p><span class="total-score"></span>점</p>
+        <button class="replay">다시하기</button>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
