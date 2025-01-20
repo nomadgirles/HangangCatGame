@@ -3,7 +3,7 @@
 ## 링크
 
 - 배포 링크: [고양이 게임 시작하기](https://nomadgirles.github.io/HangangCatGame/)
-- 튜토리얼 영상: [아파트 게임 만들기](https://www.youtube.com)
+- 튜토리얼 영상: [고양이 게임 만들기](https://youtu.be/16IjJTj_XHE)
 
 ## 기능 설명
 
