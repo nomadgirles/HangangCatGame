@@ -203,7 +203,11 @@ function crash(cat, obstacle) {
 var jumpSwitch = false;
 let jumpCount = 0;
 let jumpTimer = 0;
+/*
 let lastSpacePressTIme = 0;
+마지막으로 스페이스바를 누른 시간을 기록하여 연속 점프 시간의 간격을 조정하고자 했으나
+고양이 이미지의 y축 위치를 기준으로 연속 점프를 관리하여 사용하지 않게 된 변수
+*/
 
 document.addEventListener("keydown", function (e) {
   if (e.code === "Space" || e.code === "ArrowUp") {
@@ -227,6 +231,7 @@ function replayGame() {
   manyObstacles = [];
   currentCat = 0;
   jumpSwitch = false;
+  jumpCount = 0; // 스페이스바를 누르며 "다시하기" 버튼 클릭 시 해당 변수 초기화가 되지 않는 이슈로 추가된 코드
   lastSpacePressTIme = 0;
 
   frameRun();
